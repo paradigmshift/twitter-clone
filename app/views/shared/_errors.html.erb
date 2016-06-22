@@ -1,0 +1,5 @@
+<div class='alert alert-warning'>
+<% obj.errors.full_messages.each do |error_msg| %>
+<%= error_msg.to_s %>
+<% end if obj.errors.any? %>
+</div>

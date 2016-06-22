@@ -1,0 +1,14 @@
+<%= render 'shared/header', header:  @user.username  %>
+
+<% if logged_in? && current_user != @user %>
+  <% if !current_user.leaders.include?(@user) %>
+    <%= link_to "+ follow", follow_user_path(@user) %>
+  <% else %>
+    <%= link_to "unfollow", unfollow_user_path(@user) %>
+  <% end %>
+<% end %>
+
+<% @user.statuses.each do |status| %>
+<%= status.body %>
+<br>
+<% end if @user.statuses.any? %>

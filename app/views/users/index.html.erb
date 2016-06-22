@@ -1,0 +1,7 @@
+<%= render 'shared/navbar' %>
+<br>
+<%= render 'shared/header', header: "All Users" %>
+<% @users.each do |user| %>
+<%= link_to user.username, user_path(user.username) %>
+<br>
+<% end %>

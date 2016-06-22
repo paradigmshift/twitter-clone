@@ -1,0 +1,3 @@
+<% flash.keys.each do |key| %>
+  <div class='alert alert-<%= key.to_s %>' role="alert">  <%= flash[key] %> </div>
+<% end if flash.keys.any? %>
