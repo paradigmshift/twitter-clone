@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
 
+  get '/mentions', to: 'users#mentions', as: 'mentions'
   get '/timeline', to: 'users#timeline', as: 'timeline'
-
   get '/:username' => 'users#show', as: 'user'
 
   resources :users, only: [:new, :create] do

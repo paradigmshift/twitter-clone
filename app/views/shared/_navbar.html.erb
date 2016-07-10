@@ -1,7 +1,8 @@
 <% if logged_in? %>
 <%= link_to 'New Tweet | ', new_status_path %>
 <%= link_to 'Logout | ', logout_path %>
-<%= link_to 'Timeline', timeline_path %>
+<%= link_to 'Timeline |', timeline_path %>
+<%= link_to 'Mentions', mentions_path %>
 <% else %>
 <%= link_to 'Register | ', new_user_path %>
 <%= link_to 'Login', login_path %>

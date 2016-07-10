@@ -37,6 +37,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def mentions
+    @mentions = current_user.mentions
+  end
+
   def unfollow
     user = User.find(params[:id])
     current_user.leaders.delete(user)
@@ -46,7 +50,7 @@ class UsersController < ApplicationController
   def timeline
     @statuses = []
     current_user.leaders.each do |leader|
-      @statuses << leader.statuses
+      @statuses << leader.statuses.order(created_at: :desc)
     end if current_user.leaders.any?
     @statuses.flatten!
   end

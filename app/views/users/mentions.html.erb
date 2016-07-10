@@ -1,0 +1,7 @@
+<%= render 'shared/header', header: "Mentions"%>
+
+<ul>
+<% @mentions.each do |mention| %>
+  <li> <%= mention.status.body %> by <%= mention.status.creator.username %> </li>
+<% end %>
+</ul>

@@ -1,0 +1,1904 @@
+
+
+Started GET "/" for ::1 at 2016-06-27 21:17:32 +0900
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/mo/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mo/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mo/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.1ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (64.3ms)
+  [1m[36m (51.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (50.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20160531225847)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/mo/dev/twitter-clone/db/migrate/20160531225847_create_users.rb:7)
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160531225847"]]
+  [1m[35m (59.7ms)[0m  commit transaction
+Migrating to CreateStatuses (20160601044410)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/mo/dev/twitter-clone/db/migrate/20160601044410_create_statuses.rb:7)
+  [1m[35m (0.2ms)[0m  CREATE TABLE "statuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "creator_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160601044410"]]
+  [1m[35m (51.3ms)[0m  commit transaction
+Migrating to CreateRelationships (20160610051629)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/mo/dev/twitter-clone/db/migrate/20160610051629_create_relationships.rb:6)
+  [1m[35m (0.2ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "leader_id" integer, "follower_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160610051629"]]
+  [1m[35m (50.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-06-27 21:19:02 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_header.html.erb (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 4980ms (Views: 4785.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-1b983821e6e882619212ee1674bff56da5c24ea2993ccd8b990715e78e2c9d5c.css?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-06-27 21:19:07 +0900
+
+
+Started GET "/" for ::1 at 2016-07-10 14:41:08 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered shared/_navbar.html.erb (1.1ms)
+  Rendered shared/_header.html.erb (0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (8.9ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.8ms)
+Completed 200 OK in 595ms (Views: 537.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-1b983821e6e882619212ee1674bff56da5c24ea2993ccd8b990715e78e2c9d5c.css?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-10 14:41:09 +0900
+
+
+Started GET "/" for ::1 at 2016-07-10 14:44:11 +0900
+Processing by UsersController#index as HTML
+  Rendered shared/_navbar.html.erb (0.4ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-1b983821e6e882619212ee1674bff56da5c24ea2993ccd8b990715e78e2c9d5c.css?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:44:11 +0900
+
+
+Started GET "/" for ::1 at 2016-07-10 14:45:24 +0900
+Processing by UsersController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-1b983821e6e882619212ee1674bff56da5c24ea2993ccd8b990715e78e2c9d5c.css?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-10 14:45:24 +0900
+
+
+Started GET "/login" for ::1 at 2016-07-10 14:45:28 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.3ms)
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-07-10 14:45:30 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LgPVnZU0RHMJ3yjFmzfkmAqS8urBcRkRosh3ixnZ2kxitcsTI0Ic7v2MroEe75ZZapWFBp5UkKp8iC7EVGjp4A==", "username"=>"mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "mo"]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 39ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 14:45:30 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-07-10 14:45:36 +0900
+Processing by UsersController#new as HTML
+  Rendered shared/_errors.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (64.3ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 99ms (Views: 95.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2016-07-10 14:45:39 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qKKmn9UhYia8MpKBteAofEFVPStW4XbAD4ntWlJHFfzkFLgRY1c6u0hhFMUwOFq9IVJKxwnE/3vRybQVH/YmUA==", "user"=>{"username"=>"mo", "password"=>"[FILTERED]"}, "commit"=>"Register!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "mo"], ["password_digest", "$2a$10$spIf4orOzZZ6FlD4e1HqiO8eBoQjjzko47ewVtuyWB0J3EohD8X1W"], ["created_at", "2016-07-10 05:45:39.477600"], ["updated_at", "2016-07-10 05:45:39.477600"]]
+  [1m[35m (38.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/mo
+Completed 302 Found in 132ms (ActiveRecord: 39.0ms)
+
+
+Started GET "/mo" for ::1 at 2016-07-10 14:45:39 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"mo"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "mo"]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mStatus Exists (0.2ms)[0m  SELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1  [["creator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (24.6ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 14:45:42 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 108ms (Views: 107.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-07-10 14:45:44 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HGLN1K5gjLwhPX+BVF3oO1NBgEmeIpHKBtfOaKVcYRdQ1NNaGBbUIdVu+cXRhZr6M0b3pcEHGHHYl5cn6O1Suw==", "username"=>"mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "mo"]]
+Redirected to http://localhost:3000/mo
+Completed 302 Found in 85ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/mo" for ::1 at 2016-07-10 14:45:45 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"mo"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "mo"]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStatus Exists (0.1ms)[0m  SELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1  [["creator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/logout" for ::1 at 2016-07-10 14:45:48 +0900
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 14:45:48 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-07-10 14:45:49 +0900
+Processing by UsersController#new as HTML
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-07-10 14:45:53 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sh604rfFvcfA/KvoZdB+FOdpdEco0NPtVT8p4q6MbVMGqKpsAbPlWjSvLazgCAzVh24Dq3f1WlaLf3Ct4z1e/w==", "user"=>{"username"=>"joe", "password"=>"[FILTERED]"}, "commit"=>"Register!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["username", "joe"], ["password_digest", "$2a$10$Xr3R51O2k/F8oI6f2Bi0Se7ydA14uu0TfXmb7moy8tHrxMmgjlVry"], ["created_at", "2016-07-10 05:45:53.797805"], ["updated_at", "2016-07-10 05:45:53.797805"]]
+  [1m[36m (38.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/joe
+Completed 302 Found in 125ms (ActiveRecord: 38.8ms)
+
+
+Started GET "/joe" for ::1 at 2016-07-10 14:45:53 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"joe"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "joe"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mStatus Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 14:45:56 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-07-10 14:45:59 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"54NcdForQ1s/GaFrw2CoZvPPYb9fmNETH5PDbNUx4GyrNUL67F0bxstKJy9GuNqnk8gWUwC9WKjB05ojmIDTwA==", "username"=>"joe", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "joe"]]
+Redirected to http://localhost:3000/joe
+Completed 302 Found in 87ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/joe" for ::1 at 2016-07-10 14:45:59 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"joe"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joe"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mStatus Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/statuses/new" for ::1 at 2016-07-10 14:46:02 +0900
+Processing by StatusesController#new as HTML
+  Rendered shared/_errors.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered statuses/new.html.erb within layouts/application (7.0ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 117ms (Views: 113.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/statuses" for ::1 at 2016-07-10 14:46:06 +0900
+Processing by StatusesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EhHgugUFvpKH34XVUmScg/LPMALz2x8HC5lnxjr13ZNep/40s3PmD3OMA5HXvO5CkshH7qz+lrzV2T6Jd0TuPw==", "status"=>{"body"=>"first tweet"}, "commit"=>"Tweet!"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("body", "creator_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "first tweet"], ["creator_id", 2], ["created_at", "2016-07-10 05:46:06.130379"], ["updated_at", "2016-07-10 05:46:06.130379"]]
+  [1m[35m (40.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/joe
+Completed 302 Found in 53ms (ActiveRecord: 41.4ms)
+
+
+Started GET "/joe" for ::1 at 2016-07-10 14:46:06 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"joe"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joe"]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mStatus Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 2]]
+  [1m[35mStatus Load (0.1ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  [["creator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/statuses/new" for ::1 at 2016-07-10 14:46:08 +0900
+Processing by StatusesController#new as HTML
+  Rendered shared/_errors.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered statuses/new.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/statuses" for ::1 at 2016-07-10 14:46:11 +0900
+Processing by StatusesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AN0OsSKGJv0eE9hYWfk2bdxOYuQ72bvMP2dk++rJzwhMaxA/lPB+YOpAXhzcIUSsvEkVCGT8MnfhJz20p3j8pA==", "status"=>{"body"=>"second tweet"}, "commit"=>"Tweet!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("body", "creator_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["body", "second tweet"], ["creator_id", 2], ["created_at", "2016-07-10 05:46:11.389447"], ["updated_at", "2016-07-10 05:46:11.389447"]]
+  [1m[36m (38.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/joe
+Completed 302 Found in 44ms (ActiveRecord: 39.1ms)
+
+
+Started GET "/joe" for ::1 at 2016-07-10 14:46:11 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"joe"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "joe"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mStatus Exists (0.1ms)[0m  SELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1  [["creator_id", 2]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?[0m  [["creator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 93ms (Views: 91.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/statuses/new" for ::1 at 2016-07-10 14:46:14 +0900
+Processing by StatusesController#new as HTML
+  Rendered shared/_errors.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered statuses/new.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/statuses" for ::1 at 2016-07-10 14:46:18 +0900
+Processing by StatusesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iOfzw8wvuBBE6S+EAmG6AQ6BYt6K+/vxa9IbWzHmEK3EUe1NelngjbC6qcCHucjAboYVMtXeckq1kkIUfFcjAQ==", "status"=>{"body"=>"third tweet\r\n"}, "commit"=>"Tweet!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "statuses" ("body", "creator_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "third tweet\r\n"], ["creator_id", 2], ["created_at", "2016-07-10 05:46:18.385559"], ["updated_at", "2016-07-10 05:46:18.385559"]]
+  [1m[35m (45.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/joe
+Completed 302 Found in 52ms (ActiveRecord: 45.9ms)
+
+
+Started GET "/joe" for ::1 at 2016-07-10 14:46:18 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"joe"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joe"]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mStatus Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 2]]
+  [1m[35mStatus Load (0.1ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  [["creator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/logout" for ::1 at 2016-07-10 14:46:19 +0900
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 14:46:19 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-07-10 14:46:23 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wtska34qpVPJM/UZa3f0o1qiDpzQBtPSrECkoFcfqEYWbTrlyFz9zj1gc13ur4ZiOqV5cI8jWmlyAP3vGq6b6g==", "username"=>"mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "mo"]]
+Redirected to http://localhost:3000/mo
+Completed 302 Found in 86ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/mo" for ::1 at 2016-07-10 14:46:23 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"mo"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "mo"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStatus Exists (0.1ms)[0m  SELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1  [["creator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/timeline" for ::1 at 2016-07-10 14:46:37 +0900
+Processing by UsersController#timeline as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? LIMIT 1  [["follower_id", 1]]
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered users/timeline.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 220ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-07-10 14:46:48 +0900
+Processing by UsersController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/joe" for ::1 at 2016-07-10 14:46:51 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"joe"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joe"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 1], ["id", 2]]
+  [1m[35mStatus Exists (0.1ms)[0m  SELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1  [["creator_id", 2]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?[0m  [["creator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2/follow" for ::1 at 2016-07-10 14:46:55 +0900
+Processing by UsersController#follow as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 1], ["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "relationships" ("follower_id", "leader_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["follower_id", 1], ["leader_id", 2], ["created_at", "2016-07-10 05:46:55.512237"], ["updated_at", "2016-07-10 05:46:55.512237"]]
+  [1m[36m (42.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/joe
+Completed 302 Found in 51ms (ActiveRecord: 43.3ms)
+
+
+Started GET "/joe" for ::1 at 2016-07-10 14:46:55 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"joe"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "joe"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 1], ["id", 2]]
+  [1m[36mStatus Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 2]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  [["creator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/timeline" for ::1 at 2016-07-10 14:46:57 +0900
+Processing by UsersController#timeline as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? LIMIT 1  [["follower_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  [["creator_id", 2]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/timeline.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/timeline" for ::1 at 2016-07-10 14:49:07 +0900
+Processing by UsersController#timeline as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? LIMIT 1[0m  [["follower_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?[0m  [["creator_id", 2]]
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered users/timeline.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `order' for #<Array:0x007f36f2444ca8>):
+    1: <%= render 'shared/header', header: "Your timeline" %>
+    2: 
+    3: <ul>
+    4: <% @statuses.order(created_at: :desc).each do |status| %>
+    5:   <li> <%= status.body %> by <%= status.creator.username %> </li>
+    6: <% end %>
+    7: </ul>
+  app/views/users/timeline.html.erb:4:in `_app_views_users_timeline_html_erb__4497302527125288022_69936984693180'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.1ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.6ms)
+
+
+Started GET "/timeline" for ::1 at 2016-07-10 14:51:20 +0900
+Processing by UsersController#timeline as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? LIMIT 1[0m  [["follower_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  ORDER BY "statuses"."created_at" DESC[0m  [["creator_id", 2]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/timeline.html.erb within layouts/application (5.5ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 37.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.self-1b983821e6e882619212ee1674bff56da5c24ea2993ccd8b990715e78e2c9d5c.css?body=1" for ::1 at 2016-07-10 14:51:20 +0900
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:51:20 +0900
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-07-10 14:51:20 +0900
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-07-10 14:51:20 +0900
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:51:21 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMentions (20160710060202)
+  [1m[35m (0.1ms)[0m  begin transaction
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/mo/dev/twitter-clone/db/migrate/20160710060202_create_mentions.rb:5)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "mentions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "mention_id" integer, "status_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160710060202"]]
+  [1m[36m (53.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:09:33 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#mentions as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `mentions' for #<User:0x007f36f1ce5598>):
+  app/controllers/users_controller.rb:41:in `mentions'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.8ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.7ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.8ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:13:35 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `mentions' for #<User:0x007f36f1dd0818>):
+  app/controllers/users_controller.rb:41:in `mentions'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.8ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.5ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:14:28 +0900
+Processing by UsersController#mentions as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.7ms)
+
+ActionView::MissingTemplate (Missing template users/mentions, application/mentions with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/mo/dev/twitter-clone/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/mo/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/mo/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mo/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mo/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (19.6ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.1ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.7ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:15:10 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mMention Load (1.4ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?  [[nil, 1]]
+  Rendered users/mentions.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: mentions.user_id: SELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?):
+    1: <%= render 'shared/header', header: "Mentions"%>
+    2: 
+    3: <ul>
+    4: <% @mentions.each do |mention| %>
+    5:   <li> <%= mention.status.body %> by <%= mention.status.creator.username %> </li>
+    6: <% end %>
+    7: </ul>
+  app/views/users/mentions.html.erb:4:in `_app_views_users_mentions_html_erb___101215436958864487_69936982721920'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.5ms)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "mentions" ("mention_id", "status_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["mention_id", 1], ["status_id", 1], ["created_at", "2016-07-10 06:16:58.540794"], ["updated_at", "2016-07-10 06:16:58.540794"]]
+  [1m[36m (345.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:17:00 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mMention Load (0.7ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?  [[nil, 1]]
+  Rendered users/mentions.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: mentions.user_id: SELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?):
+    1: <%= render 'shared/header', header: "Mentions"%>
+    2: 
+    3: <ul>
+    4: <% @mentions.each do |mention| %>
+    5:   <li> <%= mention.status.body %> by <%= mention.status.creator.username %> </li>
+    6: <% end %>
+    7: </ul>
+  app/views/users/mentions.html.erb:4:in `_app_views_users_mentions_html_erb___101215436958864487_69936982721920'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.6ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:17:29 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mMention Load (1.7ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?  [[nil, 1]]
+  Rendered users/mentions.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.8ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: mentions.user_id: SELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?):
+    1: <%= render 'shared/header', header: "Mentions"%>
+    2: 
+    3: <ul>
+    4: <% @mentions.each do |mention| %>
+    5:   <li> <%= mention.status.body %> by <%= mention.status.creator.username %> </li>
+    6: <% end %>
+    7: </ul>
+  app/views/users/mentions.html.erb:4:in `_app_views_users_mentions_html_erb___101215436958864487_69936982721920'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.2ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:19:35 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mMention Load (1.5ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?  [[nil, 1]]
+  Rendered users/mentions.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.7ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: mentions.user_id: SELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?):
+    1: <%= render 'shared/header', header: "Mentions"%>
+    2: 
+    3: <ul>
+    4: <% @mentions.each do |mention| %>
+    5:   <li> <%= mention.status.body %> by <%= mention.status.creator.username %> </li>
+    6: <% end %>
+    7: </ul>
+  app/views/users/mentions.html.erb:4:in `_app_views_users_mentions_html_erb___101215436958864487_69936982721920'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (80.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMention Load (0.4ms)[0m  [1mSELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?[0m  [[nil, 1]]
+  [1m[35mMention Load (1.3ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."user_id" = ?  [[nil, 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMention Load (0.2ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 1]]
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:20:59 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[35mMention Load (0.2ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 1]]
+  Rendered users/mentions.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `status' for #<Mention:0x007f36f24e7098>):
+    2: 
+    3: <ul>
+    4: <% @mentions.each do |mention| %>
+    5:   <li> <%= mention.status.body %> by <%= mention.status.creator.username %> </li>
+    6: <% end %>
+    7: </ul>
+  app/views/users/mentions.html.erb:5:in `block in _app_views_users_mentions_html_erb___101215436958864487_69936982721920'
+  app/views/users/mentions.html.erb:4:in `_app_views_users_mentions_html_erb___101215436958864487_69936982721920'
+
+
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mo/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.6ms)
+  [1m[36mMention Load (0.4ms)[0m  [1mSELECT  "mentions".* FROM "mentions"  ORDER BY "mentions"."id" ASC LIMIT 1[0m
+  [1m[35mStatus Load (0.8ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."mention_id" = ?  [[nil, 1]]
+  [1m[36mMention Load (0.2ms)[0m  [1mSELECT  "mentions".* FROM "mentions"  ORDER BY "mentions"."id" ASC LIMIT 1[0m
+  [1m[35mMention Load (0.3ms)[0m  SELECT  "mentions".* FROM "mentions"  ORDER BY "mentions"."id" ASC LIMIT 1
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:23:28 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[35mMention Load (0.1ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/mentions.html.erb within layouts/application (69.3ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 122ms (Views: 99.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.self-1b983821e6e882619212ee1674bff56da5c24ea2993ccd8b990715e78e2c9d5c.css?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-10 15:23:28 +0900
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:23:54 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.2ms)
+  [1m[35mMention Load (0.2ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/mentions.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-1b983821e6e882619212ee1674bff56da5c24ea2993ccd8b990715e78e2c9d5c.css?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-10 15:23:54 +0900
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:23:56 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[35mMention Load (0.1ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 1]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/mentions.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:24:04 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mMention Load (0.1ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 1]]
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/mentions.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 40.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-1b983821e6e882619212ee1674bff56da5c24ea2993ccd8b990715e78e2c9d5c.css?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-10 15:24:04 +0900
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:37:06 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mMention Load (0.2ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/mentions.html.erb within layouts/application (14.6ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 56.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-1b983821e6e882619212ee1674bff56da5c24ea2993ccd8b990715e78e2c9d5c.css?body=1" for ::1 at 2016-07-10 15:37:06 +0900
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-07-10 15:37:06 +0900
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-10 15:37:07 +0900
+
+
+Started GET "/statuses/new" for ::1 at 2016-07-10 15:37:07 +0900
+Processing by StatusesController#new as HTML
+  Rendered shared/_errors.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/new.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-07-10 15:37:12 +0900
+Processing by UsersController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_navbar.html.erb (0.6ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/statuses/new" for ::1 at 2016-07-10 15:37:15 +0900
+Processing by StatusesController#new as HTML
+  Rendered shared/_errors.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/new.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 83ms (Views: 82.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/statuses" for ::1 at 2016-07-10 15:37:20 +0900
+Processing by StatusesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RPUZePv2EJz0OH+B+v1PT81sD3UqQvOJOhqDlRKTpwYIQwf2TYBIAQBr+cV/JT2OrWt4mXVnejLkWtraXyKUqg==", "status"=>{"body"=>"@joe hey buddy"}, "commit"=>"Tweet!"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "statuses" ("body", "creator_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "@joe hey buddy"], ["creator_id", 1], ["created_at", "2016-07-10 06:37:20.714197"], ["updated_at", "2016-07-10 06:37:20.714197"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "joe"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "mentions" ("mention_id", "status_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["mention_id", 2], ["status_id", 4], ["created_at", "2016-07-10 06:37:20.719422"], ["updated_at", "2016-07-10 06:37:20.719422"]]
+  [1m[35m (98.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/mo
+Completed 302 Found in 111ms (ActiveRecord: 100.1ms)
+
+
+Started GET "/mo" for ::1 at 2016-07-10 15:37:20 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"mo"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "mo"]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStatus Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 1]]
+  [1m[35mStatus Load (0.1ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  [["creator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (7.4ms)
+  Rendered shared/_navbar.html.erb (0.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/timeline" for ::1 at 2016-07-10 15:37:24 +0900
+Processing by UsersController#timeline as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? LIMIT 1  [["follower_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35mStatus Load (0.1ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  ORDER BY "statuses"."created_at" DESC  [["creator_id", 2]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/timeline.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 29.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/logout" for ::1 at 2016-07-10 15:37:26 +0900
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 15:37:26 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-07-10 15:37:29 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zjS+8cKOiFXeNLUG39od8vESVvJbWndYfsAsOfUTfPaCgqB/dPjQyCpnM0JaAm8zkRUhHgR//uOggHV2uKJPWg==", "username"=>"joe", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "joe"]]
+Redirected to http://localhost:3000/joe
+Completed 302 Found in 107ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/joe" for ::1 at 2016-07-10 15:37:29 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"joe"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joe"]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mStatus Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 2]]
+  [1m[35mStatus Load (0.1ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  [["creator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/timeline" for ::1 at 2016-07-10 15:37:32 +0900
+Processing by UsersController#timeline as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? LIMIT 1  [["follower_id", 2]]
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered users/timeline.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 15:37:34 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[35mMention Load (0.1ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 2]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/mentions.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for ::1 at 2016-07-10 20:55:56 +0900
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 20:55:56 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-07-10 20:55:58 +0900
+Processing by UsersController#new as HTML
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 33.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2016-07-10 20:56:02 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tK5dxP3YI30q8X8CHBpbTQl51kWK7q4vkw74CTZilgH4GENKS6574N6i+UaZwimMaX6hqdXLJ5RNTqFGe9OlrQ==", "user"=>{"username"=>"bob", "password"=>"[FILTERED]"}, "commit"=>"Register!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["username", "bob"], ["password_digest", "$2a$10$2DjZSVialP8LBm/eEEbCYuCPxgZ/1iRFlYK3xokltIe28a5wzM09C"], ["created_at", "2016-07-10 11:56:02.266208"], ["updated_at", "2016-07-10 11:56:02.266208"]]
+  [1m[36m (38.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/bob
+Completed 302 Found in 126ms (ActiveRecord: 39.2ms)
+
+
+Started GET "/bob" for ::1 at 2016-07-10 20:56:02 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"bob"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "bob"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mStatus Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 3]]
+  Rendered users/show.html.erb within layouts/application (5.4ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 99ms (Views: 97.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mo" for ::1 at 2016-07-10 20:56:07 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"mo"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "mo"]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[36mStatus Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 1]]
+  [1m[35mStatus Load (0.2ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  [["creator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (6.2ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 20:56:11 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-07-10 20:56:20 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vUyWsNjmoPnMEBytjPssLcGGyAsdJiLaqnDnTIC6yDLx+og+bpD4ZDhDmukJI17soYG/50IDq2F0ML4DzQv7ng==", "username"=>"bob", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "bob"]]
+Redirected to http://localhost:3000/bob
+Completed 302 Found in 83ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/bob" for ::1 at 2016-07-10 20:56:20 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"bob"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "bob"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mStatus Exists (0.1ms)[0m  SELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1  [["creator_id", 3]]
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mo" for ::1 at 2016-07-10 20:56:23 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"mo"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "mo"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 3], ["id", 1]]
+  [1m[35mStatus Exists (0.1ms)[0m  SELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1  [["creator_id", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?[0m  [["creator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (15.9ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 105.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/follow" for ::1 at 2016-07-10 20:56:24 +0900
+Processing by UsersController#follow as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 3], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "relationships" ("follower_id", "leader_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["follower_id", 3], ["leader_id", 1], ["created_at", "2016-07-10 11:56:24.487754"], ["updated_at", "2016-07-10 11:56:24.487754"]]
+  [1m[36m (42.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/mo
+Completed 302 Found in 51ms (ActiveRecord: 43.4ms)
+
+
+Started GET "/mo" for ::1 at 2016-07-10 20:56:24 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"mo"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "mo"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."leader_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 3], ["id", 1]]
+  [1m[36mStatus Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 1]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  [["creator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 20:56:36 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[35mMention Load (0.1ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 3]]
+  Rendered users/mentions.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/statuses/new" for ::1 at 2016-07-10 20:56:38 +0900
+Processing by StatusesController#new as HTML
+  Rendered shared/_errors.html.erb (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered statuses/new.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 83.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/statuses" for ::1 at 2016-07-10 20:56:45 +0900
+Processing by StatusesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww0sU6zrLHHfOZ1m1Yug6XsmT424+9kj84n2vdA8FKYXuzLdGp107CtqGyJQU9IoGyE4YefeUJgtya/ynY0nCg==", "status"=>{"body"=>"hey @mo! hey @joe"}, "commit"=>"Tweet!"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "statuses" ("body", "creator_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["body", "hey @mo! hey @joe"], ["creator_id", 3], ["created_at", "2016-07-10 11:56:45.341124"], ["updated_at", "2016-07-10 11:56:45.341124"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "mo"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "mentions" ("mention_id", "status_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["mention_id", 1], ["status_id", 5], ["created_at", "2016-07-10 11:56:45.348092"], ["updated_at", "2016-07-10 11:56:45.348092"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joe"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "mentions" ("mention_id", "status_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["mention_id", 2], ["status_id", 5], ["created_at", "2016-07-10 11:56:45.349910"], ["updated_at", "2016-07-10 11:56:45.349910"]]
+  [1m[36m (41.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/bob
+Completed 302 Found in 57ms (ActiveRecord: 42.6ms)
+
+
+Started GET "/bob" for ::1 at 2016-07-10 20:56:45 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"bob"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "bob"]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mStatus Exists (0.1ms)[0m  SELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1  [["creator_id", 3]]
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?[0m  [["creator_id", 3]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 20:56:48 +0900
+Processing by UsersController#mentions as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[36mMention Load (0.1ms)[0m  [1mSELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?[0m  [["mention_id", 3]]
+  Rendered users/mentions.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for ::1 at 2016-07-10 20:56:49 +0900
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 20:56:49 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 127ms (Views: 126.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-07-10 20:56:51 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xr7ngg0mrhaHigyVZdzpSIzQWlq/FURpFKmiBCi4EBgSCPkMu1D2i3PZitHgBJuJ7NcttuAwzdLK6ftLZQkjtA==", "username"=>"mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "mo"]]
+Redirected to http://localhost:3000/mo
+Completed 302 Found in 85ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/mo" for ::1 at 2016-07-10 20:56:51 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"mo"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "mo"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStatus Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1[0m  [["creator_id", 1]]
+  [1m[35mStatus Load (0.1ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?  [["creator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 20:56:52 +0900
+Processing by UsersController#mentions as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_header.html.erb (0.1ms)
+  [1m[35mMention Load (0.1ms)[0m  SELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?  [["mention_id", 1]]
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/mentions.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/logout" for ::1 at 2016-07-10 20:57:04 +0900
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-07-10 20:57:04 +0900
+Processing by SessionsController#new as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (0.2ms)
+  Rendered shared/_flash_messages.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-07-10 20:57:08 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R0Pf7PP6JbOFMRJYDJoMFQ+S7XhsOQ+Z8BnibXNzwWsL9cFiRYx9LnFilByJQn7Ub5WalDMchiIuWbsiPsLyxw==", "username"=>"joe", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joe"]]
+Redirected to http://localhost:3000/joe
+Completed 302 Found in 88ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/joe" for ::1 at 2016-07-10 20:57:08 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"username"=>"joe"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "joe"]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mStatus Exists (0.1ms)[0m  SELECT  1 AS one FROM "statuses" WHERE "statuses"."creator_id" = ? LIMIT 1  [["creator_id", 2]]
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."creator_id" = ?[0m  [["creator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mentions" for ::1 at 2016-07-10 20:57:10 +0900
+Processing by UsersController#mentions as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered shared/_header.html.erb (0.0ms)
+  [1m[36mMention Load (0.1ms)[0m  [1mSELECT "mentions".* FROM "mentions" WHERE "mentions"."mention_id" = ?[0m  [["mention_id", 2]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered users/mentions.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.3ms)
