@@ -1,7 +1,5 @@
 <%= render 'shared/header', header: "Your timeline" %>
 
 <ul>
-<% @statuses.each do |status| %>
-  <li> <%= status.body %> by <%= status.creator.username %> </li>
-<% end %>
+<%= render 'shared/status', statuses: @statuses %>
 </ul>

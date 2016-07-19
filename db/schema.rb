@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160710060202) do
+ActiveRecord::Schema.define(version: 20160712134643) do
 
   create_table "mentions", force: :cascade do |t|
     t.integer  "mention_id"
     t.integer  "status_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "viewed_at"
   end
 
   create_table "relationships", force: :cascade do |t|

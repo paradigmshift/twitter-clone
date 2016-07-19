@@ -10,7 +10,4 @@
 
 <br>
 
-<% @user.statuses.each do |status| %>
-<%= status.body %>
-<br>
-<% end if @user.statuses.any? %>
+<%= render 'shared/status', statuses: @user.statuses %>

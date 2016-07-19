@@ -39,6 +39,7 @@ class UsersController < ApplicationController
 
   def mentions
     @mentions = current_user.mentions
+    current_user.mentions.where(viewed_at: nil).update_all(viewed_at: Time.now)
   end
 
   def unfollow

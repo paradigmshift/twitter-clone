@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get '/mentions', to: 'users#mentions', as: 'mentions'
   get '/timeline', to: 'users#timeline', as: 'timeline'
+  get '/hashtags/:id', to: 'hashtags#show'
   get '/:username' => 'users#show', as: 'user'
 
   resources :users, only: [:new, :create] do

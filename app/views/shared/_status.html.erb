@@ -1,0 +1,5 @@
+<ul>
+<% statuses.each do |status| %>
+  <li> <%= auto_link(status.body) %> by <%= status.creator.username %> </li>
+<% end if statuses %>
+</ul>
